@@ -8,7 +8,7 @@ This is my collection of minimalistic, flat art, and colorful, digital nature wa
 
 ## Wallpapers
 
-To view a gallery of all 300+ wallpapers, [click here](https://tobe-online.com-placeholder/)!
+To view a gallery of all 300+ wallpapers, [click here](https://wall.mikailthoriq.cf/)!
 
 ## API
 
@@ -17,15 +17,15 @@ The website also includes a random wallpaper API, so you can request random wall
 To use the API, simply make a request to:
 
 ```md
-https://tobe-online.com-placeholder/?random
+https://wall.mikailthoriq.cf/?random
 ```
 
 To get multiple random images at once, it is recommended to change the URL slightly to avoid caching. For example,
 
 ```md
-https://tobe-online.com-placeholder/?random=1
-https://tobe-online.com-placeholder/?random=2
-https://tobe-online.com-placeholder/?random=3
+https://wall.mikailthoriq.cf/?random=1
+https://wall.mikailthoriq.cf/?random=2
+https://wall.mikailthoriq.cf/?random=3
 ```
 
 This API can be used for setting daily wallpapers on a mobile device by combining it with an app such as IFTTT.
