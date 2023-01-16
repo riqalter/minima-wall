@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 7e4cbeb1219f8bf9b980aee312958f2730e37f4b Mikail Thoriq <mikail.thoriq@gmail.com> 1673864098 +0700	commit (initial): first push
+7e4cbeb1219f8bf9b980aee312958f2730e37f4b f9f94626f4e0b56fc286d1dd80bf82f2d529d109 Mikail Thoriq <mikail.thoriq@gmail.com> 1673866154 +0700	commit: readme fix
+f9f94626f4e0b56fc286d1dd80bf82f2d529d109 f9f94626f4e0b56fc286d1dd80bf82f2d529d109 Mikail Thoriq <mikail.thoriq@gmail.com> 1673867022 +0700	rebase (start): checkout 7e4cbeb
+f9f94626f4e0b56fc286d1dd80bf82f2d529d109 f9f94626f4e0b56fc286d1dd80bf82f2d529d109 Mikail Thoriq <mikail.thoriq@gmail.com> 1673867022 +0700	rebase (finish): returning to refs/heads/master
