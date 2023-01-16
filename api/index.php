@@ -24,6 +24,9 @@ function curlGetContents($url, $userAgent)
 }
 
 /**
+ * 
+ * gatau ini ngikut aja sarannya chatgpt
+ * 
  * Fetch an image, if it is larger than 4.5MB, redirect to it
  * otherwise, return the image as content
  *
@@ -33,10 +36,10 @@ function curlGetContents($url, $userAgent)
  */
 function displayImage($url, $userAgent, $redirect)
 {
-    // don't need to fetch the image if we're redirecting
+    // gaperlu di fetch kalo cuma redirect
     $contents = $redirect ? "" : curlGetContents($url, $userAgent);
 
-    // redirect if redirect is set or the image is larger than 4.5MB
+    // redirect kalo gambar/image lebih dari 4.5MB
     if ($redirect || strlen($contents) > 4500000) {
         header("Location: $url");
         exit;
