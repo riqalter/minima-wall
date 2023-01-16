@@ -101,7 +101,7 @@ if (isset($_GET['random'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <!-- glightbox -->
+    <!-- glightbox (bisa make selain unpkg) -->
     <link rel="stylesheet" href="https://unpkg.com/glightbox@latest/dist/css/glightbox.min.css" />
     <script src="https://unpkg.com/glightbox@latest/dist/js/glightbox.min.js"></script>
     <!-- Custom CSS -->
@@ -275,7 +275,7 @@ if (isset($_GET['random'])) {
             });
         });
 
-        // jika server wsrv.nl gagal/error, fallback ke full-size image
+        // jika server wsrv.nl gagal/error, fallback ke full-size image (klo udah ke fallback konsekuensi jadi lemot website nya)
         document.querySelectorAll(".gallery img").forEach(function(img) {
             img.addEventListener("error", function() {
                 this.src = this.parentElement.href;
