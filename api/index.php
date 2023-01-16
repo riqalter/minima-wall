@@ -65,7 +65,7 @@ $IMAGES_DIRECTORY = "images";
 $BASE_URL = "https://raw.githubusercontent.com/$REPO/$BRANCH_NAME/$IMAGES_DIRECTORY/";
 
 // prefix buat generate thumnail 332px x 200px
-$IMGPROXY_PREFIX = "https://wsrv.nl/?url=$BASE_URL"."&w=332&h=200";
+$IMGPROXY_PREFIX = "https://wsrv.nl/?url=$BASE_URL";
 
 // api github buat return file dari repository
 $GITHUB_API_URL = "https://api.github.com/repos/$REPO/contents/$IMAGES_DIRECTORY/";
@@ -221,7 +221,7 @@ if (isset($_GET['random'])) {
         <?php foreach ($images as $image) : ?>
             <?php $image_path = $image["download_url"]; ?>
             <a href="<?= $image_path; ?>" class="glightbox" data-alt="<?= basename($image_path); ?>" data-description="<?= basename($image_path); ?>">
-                <img src="<?= $IMGPROXY_PREFIX . basename($image_path); ?>" loading="lazy" alt="<?= basename($image_path); ?>" title="<?= basename($image_path); ?>" class="loading" onload="this.classList.remove('loading')">
+                <img src="<?= $IMGPROXY_PREFIX . basename($image_path) . "&w=332&h=200"; ?>" loading="lazy" alt="<?= basename($image_path); ?>" title="<?= basename($image_path); ?>" class="loading" onload="this.classList.remove('loading')">
             </a>
         <?php endforeach; ?>
     </div>
