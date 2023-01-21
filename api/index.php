@@ -68,7 +68,7 @@ $IMAGES_DIRECTORY = "images";
 $BASE_URL = "https://raw.githubusercontent.com/$REPO/$BRANCH_NAME/$IMAGES_DIRECTORY/";
 
 // prefix buat generate thumnail 332px x 200px
-$IMGPROXY_PREFIX = "https://wsrv.nl/?url=$BASE_URL";
+$IMGPROXY_PREFIX = "https://imgproxy1.riqexpe.eu.org/?url=$BASE_URL";
 
 // api github buat return file dari repository
 $GITHUB_API_URL = "https://api.github.com/repos/$REPO/contents/$IMAGES_DIRECTORY/";
