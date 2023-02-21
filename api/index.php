@@ -284,17 +284,11 @@ if (isset($_GET['random'])) {
 
         document.querySelectorAll(".gallery img").forEach(function(img) {
             img.addEventListener("error", function() {
-                if (this.src.indexOf(IMGPROXY_PREFIX) === 0) {
-                    // If the original URL has the IMGPROXY_PREFIX, fallback to the secondary server
-                this.src = secondaryServerUrl + this.src.substring(IMGPROXY_PREFIX.length);
-                } else {
-                    // Otherwise, fallback to the original link
-                this.src = this.parentElement.href;
-                }
+                this.src = secondaryServerUrl;
             });
         });
 
-
+        // legacy code
         // document.querySelectorAll(".gallery img").forEach(function(img) {
         //     img.addEventListener("error", function() {
         //         this.src = this.parentElement.href;
