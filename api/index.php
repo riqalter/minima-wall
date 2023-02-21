@@ -295,11 +295,11 @@ if (isset($_GET['random'])) {
         });
 
 
-        document.querySelectorAll(".gallery img").forEach(function(img) {
-            img.addEventListener("error", function() {
-                this.src = this.parentElement.href;
-            });
-        });
+        // document.querySelectorAll(".gallery img").forEach(function(img) {
+        //     img.addEventListener("error", function() {
+        //         this.src = this.parentElement.href;
+        //     });
+        // });
     </script>
 </body>
 
